@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <!-- page area of triangle -->
+    <header>
+        <h1 class="welcome">Welcome to Katik</h1>
+        <div class="introduce">
+            <h4>Hai Sobat, Selamat datang di Katik :)</h4>
+            <h4>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</h4>
+        </div>
+        <div>
+            <p><h3 class="menu-triangle">Triangle</h3></p>
+            <p><h3 class="menu-parallelogram">Parallelogram</h3></p>
+        </div>
+    </header>
+    <main>
+        <section class=section-triangle id="triangle">
+            <div>
+                <div>
+                    <h2 class="title-luastriangle">Area of a Triangle</h2>
+                </div>
+                <div>
+                    <img class="image" src="image/equilateral_triangle.png" alt="">
+                </div>
+                <div>
+                    <h4 class="rumus">The Formula for Area of a Triangle is :</h4>
+                    <p class="rumus-luastriangle">A = 1/2 x b x h</p>
+                </div>
+                <div class="keterangan">
+                    <h4>Which is :</h4>
+                    <p>A = Area</p>
+                    <p>b = Base</p>
+                    <p>h = Height</p>
+                </div>
+            </div>
+            <div class="form-triangle">
+                <h1>Calculate Area of Triangle</h1>
+                <form>           
+                    <label for="base">Base (cm) :</label>
+                    <input type="number" id="base" name="base"><br><br>
+                    <label for="height">Height (cm) :</label>
+                    <input type="number" id="height" name="height"><br><br>
+                    <div class="result" id="result"></div>
+                    <input class="button" type="button" value="Calculate" onclick="calculateArea()"><br>
+                    <button type="button" onclick="resetFields()" class="reset">RESET</button>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+    
+<!-- page perimeter of triangle -->
+<main>
+<section class=section-triangle id="triangle">
+    <div>
+        <div>
+            <h2 class="title-luastriangle">Perimeter of Triangle</h2>
+        </div>
+        <div>
+            <img class="image" src="image/equilateral_triangle.png" alt="">
+        </div>
+        <div>
+            <h4 class="rumus">The Formula for Perimeter of a Triangle is :</h4>
+            <p class="rumus-luastriangle">P = s(a) + s(b) + s(c)</p>
+        </div>
+        <div class="keterangan">
+            <h4>which is :</h4>
+            <p>P = Perimeter</p>
+            <p>s(a) = Side a</p>
+            <p>s(b) = Side b</p>
+            <p>s(c) = Side c</p>
+        </div>
+    </div>
+    <div class="form-triangle">
+        <h1>Perimeter of Triangle</h1>
+        <form>           
+            <label for="sideA">side A (cm):</label>
+		    <input type="number" id="sideA" name="sideA"><br>
+		    <label for="sideB">side B (cm):</label>
+		    <input type="number" id="sideB" name="sideB"><br>
+            <label for="sideC">side C (cm):</label>
+		    <input type="number" id="sideC" name="sideC"><br>
+            <div class="result" id="result2"></div>
+		    <input class="button" type="button" value="Calculate" onclick="perimeter()"><br>
+            <button type="button" onclick="resetFields2()" class="reset">RESET</button>
+	    </form> 
+    </div>
+</section>
+</main>
+<!-- page area of parallelogram -->
+<div>
+    <p><h3 class="menu2-triangle">Triangle</h3></p>
+    <p><h3 class="menu2-parallelogram">Parallelogram</h3></p>
+</div>
+
+<main>
+<section class=section-parallelogram id="">
+    <div>
+        <div>
+            <h2 class="title-luasparalellogram">Area of a Parallelogram</h2>
+        </div>
+        <div>
+            <img class="image" src="image/Parallelogram.png" alt="">
+        </div>
+        <div>
+            <h4 class="rumus">The Formula for Area of a Parallelogram is :</h4>
+            <p class="rumus-luasparallelogram">A = b x h</p>
+        </div>
+        <div class="keterangan">
+            <h4>Which is :</h4>
+            <p>A = Area</p>
+            <p>b = Base</p>
+            <p>h = Height</p>
+        </div>
+    </div>
+    <div class="form-parallelogram">
+        <h1>Calculate Area of Parallelogram</h1>
+        <form>           
+            <label for="base">Base (cm) :</label>
+            <input type="number" id="base2" name="base"><br><br>
+            <label for="height">Height (cm) :</label>
+            <input type="number" id="height2" name="height"><br><br>
+            <div class="result" id="result3"></div>
+            <input class="button" type="button" value="Calculate" onclick="calculateAreaParallelogram()"><br>
+            <button type="button" onclick="resetFields3()" class="reset">RESET</button>
+        </form>
+        
+    </div>
+</section>
+</main>
+<!-- page perimeter of parallelogram -->
+<main>
+<section class=section-parallelogram id="">
+    <div>
+        <div>
+            <h2 class="title-luasparalellogram">Perimeter of a Parallelogram</h2>
+        </div>
+        <div>
+            <img class="image" src="image/Parallelogram.png" alt="">
+        </div>
+        <div>
+            <h4 class="rumus">The Formula for Perimeter of a Parallelogram is :</h4>
+            <p class="rumus-luasparallelogram">P = 2 x (a + b)</p>
+        </div>
+        <div class="keterangan">
+            <h4>Which is :</h4>
+            <p>P = Perimeter</p>
+            <p>b = Base</p>
+            <p>a = angle</p>
+        </div>
+    </div>
+    <div class="form-parallelogram">
+        <h1>Calculate Perimeter of Parallelogram</h1>
+        <form>           
+            <label for="base">Base (cm) :</label>
+            <input type="number" id="base3" name="base"><br><br>
+            <label for="angle">Angle (cm) :</label>
+            <input type="number" id="angle" name="angle"><br><br>
+            <div class="result" id="result4"></div>
+            <input class="button" type="button" value="Calculate" onclick="calculatePeriParallelogram()"><br>
+            <button type="button" onclick="resetFields4()" class="reset">RESET</button>
+        </form>
+        
+    </div>
+</section>
+</main>
+</body>
+</html>
